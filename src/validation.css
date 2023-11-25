@@ -1,0 +1,61 @@
+body{
+    background-color: #ffeeef;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #ff7c84;
+}
+body .btn,
+body .btn2 {
+  width: 150px;
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(-45deg,  #3cf0c5, #338aff, #ff3d77, #ffa63d);
+  background-size: 600%;
+  -webkit-animation: anime 10s linear infinite;
+          animation: anime 10s linear infinite;
+}
+body .btn2 {
+  position: absolute;
+  /* margin-top: 0px; */
+  z-index: -1;
+  filter: blur(30px);
+  opacity: 0.8;
+}
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.table{
+    display: none;
+}
+h3{
+    color: #ff4f5a;
+}
+.clr{
+    color: #ff4f5a !important;  
+}
