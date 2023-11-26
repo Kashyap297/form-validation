@@ -44,12 +44,7 @@ const Validation = () => {
     }
     if (input.number === "" || input.number === " ") {
       errors.number = "Number is Required";
-    } else {
-      showElement()
-      hideElement()
     }
-
-
     return errors;
   };
 
@@ -60,9 +55,12 @@ const Validation = () => {
     const check = Object.keys(validate)
     if (check.length < 1) {
       setDatas([...datas, input])
+      showElement()
+      hideElement()
+      setInput(initialInput)
     }
-    setInput(initialInput)
   };
+
 
 
   return (
